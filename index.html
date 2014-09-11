@@ -1,0 +1,67 @@
+---
+---
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ site.title | markdownify | strip_html }}</title>
+      <meta name="description" content="{{ site.description}}">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+    <body class="impress-not-supported">
+
+      <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+      </div>
+
+      <div class="container">
+        <div id="impress">
+          {% for slide in site.slides %}
+            {% assign parts = slide.relative_path | replace:"_slides/","" | replace:".md","" | split:"-" %}
+            {% assign slug = parts | join:"-" | replace:parts[0],"" | replace:parts[1], "" | replace_first:"--","" %}
+            <div id="{{ slug }}"
+                 class="step"
+                 data-x="{{ parts[0] | times: 1000 }}"
+                 data-y="{{ parts[1] | times: 1000 }}"
+                 data-z="{{ slide.z }}"
+                 scale="{{ slide.scale }}"
+                 data-rotate-x="{{ slide.rotate-x }}"
+                 data-rotate-y="{{ slide.rotate-y }}"
+                 data-rotate-z="{{ slide.rotate-z }}"
+            >
+              <h1 class="title">
+                {% if slide.octicon %}
+                  <span class="mega-octicon octicon-{{ slide.octicon }}">&nbsp;</span>
+                {% endif %}
+                {{ slide.title | markdownify | replace:"<p>","" | replace: "</p>","" }}
+              </h1>
+
+              {{ slide.content }}
+
+              {% if slide.notes %}
+                <div class="notes">
+{% for note in slide.notes %}
+* {{ note }}
+{% endfor %}
+                </div><!-- /notes -->
+              {% endif %}
+            </div><!-- /slide -->
+          {% endfor %}
+        </div><!-- /impress -->
+      </div> <!-- /container -->
+
+      <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+      <script src="assets/vendor/impress.js/js/impress.js"></script>
+      <script type="text/javascript" src="http://localhost:9292/faye/client.js"></script>
+      <script type="text/javascript" src="assets/js/sync.js"></script>
+      <script>if (window.location.hash == "#print") {
+        window.print()
+      } else {
+        impress().init();
+      }</script>
+      <script src="assets/js/deck.js"></script>
+    </body>
+</html>

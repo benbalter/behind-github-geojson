@@ -1,0 +1,14 @@
+{
+  "name": "open-source-demystified",
+  "version": "0.0.0",
+  "authors": [
+    "Ben Balter <ben.balter@github.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "impress.js": "~0.5.3",
+    "octicons": "~2.1.2"
+  }
+}

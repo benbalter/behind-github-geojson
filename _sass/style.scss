@@ -1,0 +1,151 @@
+/* Global */
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 90px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+/*h1.title {font-weight: bold; }*/
+
+h2 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+ul {
+  list-style: none; }
+
+li {
+  line-height: 1.1em;
+  padding-bottom: 20px; }
+
+.blue {
+  color: #4183c4; }
+
+.step {
+  font-size: 40px;
+  line-height: 1em;
+  font-family: 'Apex New', 'Helvetica Neue', Helvetica;
+}
+
+p {
+  margin-bottom: 25px; }
+
+code {
+  font-size: 35px;
+  color: #4183c4;
+  padding: 0 4px 2px 4px;
+  line-height: 1.5em;
+}
+
+#feedlyMiniIcon {
+  display: none !important; }
+
+/* Geeky lists */
+ol {
+  counter-reset: item -1;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none; }
+
+ol li {
+  text-align: left; }
+
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item; }
+
+/* Code */
+.highlight {
+  text-align: left;
+  text-shadow: none;
+  width: 101%;
+  font-size: 24px;
+  }
+
+.highlight code {
+  font-family: Inconsolata
+}
+
+/* Slide Specific */
+.contact-info {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.contact-info a {
+  color: $brand-lightGrey;
+}
+
+.mega-octicon { font-size: 1em; }
+
+small { font-size: 0.6em; color: $brand-lightGrey; }
+
+table tr td {
+  padding: 2%;
+}
+
+table.apex-first tr td:first-child {
+  font-family: "Apex New", $font-default;
+  font-weight: bold;
+}
+
+table.apex-header tr:first-child td {
+  font-family: "Apex New", $font-default;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+table.squished tr td {
+  padding: 1%;
+}
+
+div.notes { display: none; }
+
+img {
+  width: 100%;
+}
+
+.emoji {
+  width: 75px;
+  height: 75px;
+}
+
+code { background: #FFF !important; text-align: left !important; font-size: 1.5em !important; }
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+
+  /* Impress.js specific */
+  .fallback-message { display: none; }
+  @page land {size: landscape;}
+  .step { page-break-inside: avoid; page-break-after: always; border: none; margin-top: 100px; }
+  .step img { max-height: 100%; }
+
+  /* plus some more step specific styles of your own
+  #htop2 { display: none }
+   */
+}
+
+#intro h1 {font-size: 70px}
+
+a { text-shadow: none; }
+
+.github-flow td { vertical-align: middle; font-size: 30px; padding: 0; }
+#identifying-strong-open-source ul li { font-size: 30px; }

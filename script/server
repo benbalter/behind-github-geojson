@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+echo "Staring Faye in the background"
+bundle exec rackup faye.ru &
+
+echo "Starting server."
+caffeinate -diu bundle exec jekyll serve --watch
+
+echo "Shutting down faye"
+pkill -f "rackup faye.ru"
+
+echo "Cleaning up..."
+rm -Rf _site

@@ -1,0 +1,16 @@
+_site
+.sass-cache
+.bundle
+/vendor/gems
+/bin
+
+#bower bloat
+assets/vendor/bootstrap/grunt
+assets/vendor/bootstrap/less
+assets/vendor/bootstrap/test-infra
+assets/vendor/jquery/src
+assets/vendor/emojify.js/tests
+assets/vendor/fontawesome/less
+assets/vendor/fontawesome/scss
+assets/vendor/fontawesome/src
+assets/octicons/svg
