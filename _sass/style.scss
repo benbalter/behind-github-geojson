@@ -109,7 +109,7 @@ table.squished tr td {
 div.notes { display: none; }
 
 img {
-  width: 100%;
+  max-width: 90%;
 }
 
 .emoji {
@@ -143,9 +143,12 @@ code { background: #FFF !important; text-align: left !important; font-size: 1.5e
    */
 }
 
-#intro h1 {font-size: 70px}
+#intro h1 {font-size: 60px}
 
 a { text-shadow: none; }
 
 .github-flow td { vertical-align: middle; font-size: 30px; padding: 0; }
 #identifying-strong-open-source ul li { font-size: 30px; }
+.timeline tr td { font-size: 25px; padding: 0; text-align: left; }
+.timeline tr td:first-child { padding-right: 20px; }
+.timeline { margin-left: auto; margin-right: auto; }
