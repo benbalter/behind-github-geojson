@@ -2,7 +2,7 @@
 title: "How **GeoJSON Rendering at GitHub** came to be"
 ---
 
-| Feb., 20, 2013 | Concept of Where.gov |
+| Feb. 20, 2013 | Concept of Where.gov |
 | Mar. 10, 2013 | Started at GitHub |
 | Apr. &nbsp;3, 2013 | 50 LoC, working prototype |
 | May &nbsp;22, 2013 | Staff ship |

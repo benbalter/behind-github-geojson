@@ -1,5 +1,5 @@
 ---
-title: "**Enhance**"
+title: "Zoom, **enhance**"
 ---
 
 | Jun. 26, 2013 | [TopoJSON, extensions, clustering, embeds](https://github.com/blog/1541-geojson-rendering-improvements) |

@@ -37,10 +37,8 @@ p {
   margin-bottom: 25px; }
 
 code {
-  font-size: 35px;
   color: #4183c4;
   padding: 0 4px 2px 4px;
-  line-height: 1.5em;
 }
 
 #feedlyMiniIcon {
@@ -116,8 +114,6 @@ img {
   width: 75px;
   height: 75px;
 }
-
-code { background: #FFF !important; text-align: left !important; font-size: 1.5em !important; }
 
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
