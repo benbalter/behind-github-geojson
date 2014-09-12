@@ -2,5 +2,5 @@
 title: "What's **next**"
 ---
 
-* Enterprise
+* **GitHub** Enterprise
 * ???
