@@ -1,5 +1,4 @@
 ---
 title: "A **story**"
+octicon: beer
 ---
-
-## :beers:

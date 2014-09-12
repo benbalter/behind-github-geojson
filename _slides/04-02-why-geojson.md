@@ -1,5 +1,6 @@
 ---
 title: "Why **GeoJSON**"
+octicon: file-code
 ---
 
 * No API to learn

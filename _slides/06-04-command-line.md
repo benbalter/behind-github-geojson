@@ -1,5 +1,6 @@
 ---
 title: "GeoJSON diff **usage**"
+octicon: terminal
 ---
 
 {% highlight ruby %}

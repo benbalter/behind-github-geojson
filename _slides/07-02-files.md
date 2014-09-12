@@ -1,5 +1,6 @@
 ---
 title: "GeoJSON **files** on GitHub"
+octicon: globe
 ---
 
 * Several thousand GeoJSON files in March 2013

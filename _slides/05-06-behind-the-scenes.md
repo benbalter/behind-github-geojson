@@ -1,5 +1,6 @@
 ---
 title: The "**Secret Sauce**"
+octicon: gear
 ---
 
 1. GitHub.com generates iframe markup <br /><small>(+ timed, scoped token, all params passed via URL)</small>

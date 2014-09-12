@@ -1,5 +1,6 @@
 ---
 title: "Why **maps**"
+octicon: light-bulb
 ---
 
 > `where.gov` is a simple government as a platform solution built entirely on git.

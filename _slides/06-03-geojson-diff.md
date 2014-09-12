@@ -1,5 +1,6 @@
 ---
 title: "GeoJSON **Diff**"
+octicon: ruby
 ---
 
 ![GeoJSON Diff](images/geojson-diff.png)

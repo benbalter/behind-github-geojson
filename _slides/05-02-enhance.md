@@ -1,5 +1,6 @@
 ---
 title: "Zoom, **enhance**"
+octicon: microscope
 ---
 
 | Jun. 26, 2013 | [TopoJSON, extensions, clustering, embeds](https://github.com/blog/1541-geojson-rendering-improvements) |

@@ -1,5 +1,6 @@
 ---
 title: "How **GeoJSON Rendering at GitHub** came to be"
+octicon: calendar
 ---
 
 | Feb. 20, 2013 | Concept of Where.gov |

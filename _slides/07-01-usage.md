@@ -1,3 +1,4 @@
 ---
 title: "**Usage**"
+octicon: graph
 ---
