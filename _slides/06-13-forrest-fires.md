@@ -1,5 +1,5 @@
 ---
-title: "Diffing **forrest fires**"
+title: "Diffing **forest fires**"
 octicon: flame
 ---
 
